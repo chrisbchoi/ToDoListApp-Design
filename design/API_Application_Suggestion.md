@@ -20,19 +20,26 @@ The proposed API design is justified by the following factors:
 graph LR
     A[REST Controllers] --> B[Service Layer]
     B --> C[Repository Layer]
-    C --> D[Database (H2)]
-    
-    A --> E[DTOs]
+    C --> D[Database H2]
+    A --> E[DTOs API Models]
     B --> F[Domain Models]
     C --> G[Entity Models]
     
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#bbf,stroke:#333,stroke-width:2px
-    style C fill:#bfb,stroke:#333,stroke-width:2px
-    style D fill:#fbb,stroke:#333,stroke-width:2px
-    style E fill:#ffe,stroke:#333,stroke-width:1px
-    style F fill:#eff,stroke:#333,stroke-width:1px
-    style G fill:#fef,stroke:#333,stroke-width:1px
+    classDef controllers fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef service fill:#bbf,stroke:#333,stroke-width:2px;
+    classDef repository fill:#bfb,stroke:#333,stroke-width:2px;
+    classDef database fill:#fbb,stroke:#333,stroke-width:2px;
+    classDef dtoModels fill:#ffe,stroke:#333,stroke-width:1px;
+    classDef domainModels fill:#eff,stroke:#333,stroke-width:1px;
+    classDef entityModels fill:#fef,stroke:#333,stroke-width:1px;
+    
+    class A controllers;
+    class B service;
+    class C repository;
+    class D database;
+    class E dtoModels;
+    class F domainModels;
+    class G entityModels;
 ```
 
 ## Sequence Diagram
