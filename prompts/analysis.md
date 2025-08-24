@@ -1,0 +1,3 @@
+# Analysis Prompt 
+
+With files in requirements and design_constraints folder, please design TODO application, think deep and ask questions. Once analysis is completed then store analysis results in analysis folder. API_Application_Analysis.md should contain API analysis, Data_Layer_Analysis.md should contain analysis of Data layer including repository and H2 Data base. UI_Application_Analysis.md should contain analysis of UI application. there is updated requirements for UI with Application should use typescript and tsx.
